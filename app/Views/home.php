@@ -67,7 +67,7 @@
               <!-- Trending Section -->
               <div class="col-lg-4">
 
-                <div class="trending_trending">
+                <div class="trending _trending">
                   
                 </div>
 
@@ -408,12 +408,12 @@
     // !! Load Banner Home
     const dataBanner = await fetch('/banner/home',{method:'get'});
     const bannerHtml = await dataBanner.text();
-    bannerHome.innerHTML = bannerHtml;
+    bannerHome.innerHTML = bannerHtml;    
 
     // !! Load Trendings
     const dataTrending = await fetch('/trendings',{method:'get'});
     const trendingHtml = await dataTrending.text();
-    trending.innerHTML = trendingHtml; 
+    trending.innerHTML = trendingHtml;     
 
     swipe('.sliderFeaturedPosts');
   }
