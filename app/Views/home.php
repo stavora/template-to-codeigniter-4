@@ -399,7 +399,7 @@
 <?= $this->section('js') ?>
 
 <script type="module">
-  import {swipe} from '/assets/js/swipeBanner.js'
+  import {swipe} from '/assets/js/swipeBanner.js';
   
   async function loadHomeData(){
     var bannerHome = document.querySelector('._bannerHome');
